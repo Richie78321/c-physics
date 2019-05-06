@@ -43,6 +43,7 @@ int main()
 
 		//Rotate polygon (test)
 		testPolygon->Rotate(testPolygon->GetCenterPoint(), .01f);
+		testPolygon->Translate(Vector2(.1f, .1f));
 
 		window.clear();
 		

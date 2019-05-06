@@ -1,7 +1,8 @@
 ﻿  stdafx.cpp
   dllmain.cpp
-  RGPhysics.cpp
-c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\rgphysics.cpp(77): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Polygon.cpp
+c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\polygon.cpp(12): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  RigidBody.cpp
+c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\rigidbody.h(15): error C2061: syntax error: identifier 'Polygon'
+  Vector2.cpp
   Generating Code...
-     Creating library C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.lib and object C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.exp
-  RGPhysics.vcxproj -> C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.dll
