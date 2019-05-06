@@ -1,4 +1,7 @@
-﻿  RGPhysics.cpp
-c:\users\rgoul\desktop\rg-physics\rgphysics\rgphysics\rgphysics.cpp(77): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-     Creating library C:\Users\rgoul\Desktop\rg-physics\RGPhysics\Debug\RGPhysics.lib and object C:\Users\rgoul\Desktop\rg-physics\RGPhysics\Debug\RGPhysics.exp
-  RGPhysics.vcxproj -> C:\Users\rgoul\Desktop\rg-physics\RGPhysics\Debug\RGPhysics.dll
+﻿  stdafx.cpp
+  dllmain.cpp
+  RGPhysics.cpp
+c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\rgphysics.cpp(77): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+     Creating library C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.lib and object C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.exp
+  RGPhysics.vcxproj -> C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.dll

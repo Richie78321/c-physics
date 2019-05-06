@@ -34,6 +34,8 @@ public:
 	Vector2 GetCenterPoint();
 
 	void Rotate(Vector2 axis, float radians);
+	void Translate(Vector2 translation);
+	void TranslateTo(Vector2 position);
 
 private:
 	std::vector<Vector2> vertices;

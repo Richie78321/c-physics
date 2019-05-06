@@ -90,6 +90,22 @@ void Polygon::Rotate(Vector2 axis, float radians)
 	{
 		this->vertices[i].Rotate(axis, radians);
 	}
+	this->centerPoint.Rotate(axis, radians);
+}
+
+void Polygon::Translate(Vector2 translation)
+{
+	int numVertices = this->vertices.size();
+	for (int i = 0; i < numVertices; i++)
+	{
+		this->vertices[i] += translation;
+	}
+	this->centerPoint += translation;
+}
+
+void Polygon::TranslateTo(Vector2 position)
+{
+	this->Translate(position - this->centerPoint);
 }
 
 std::vector<Vector2> Polygon::GetRectVertices(float x, float y, float width, float height)
