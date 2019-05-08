@@ -7,6 +7,8 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
+using namespace RGPhysics;
+
 sf::ConvexShape getPolygonShape(Polygon *polygon)
 {
 	sf::ConvexShape shape;

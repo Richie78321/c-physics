@@ -2,6 +2,8 @@
 #include "Vector2.h"
 #include "Polygon.h"
 
+using namespace RGPhysics;
+
 Polygon::Polygon(std::vector<Vector2> vertices)
 {
 	this->vertices = vertices;

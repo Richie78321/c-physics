@@ -9,20 +9,28 @@
 #define RGPHYSICS_API __declspec(dllimport)
 #endif
 
-struct RGPHYSICS_API Vector2
+namespace RGPhysics
 {
-public:
-	float x, y;
-	Vector2(float x, float y);
-	Vector2();
+	struct RGPHYSICS_API Vector2
+	{
+	public:
+		float x, y;
+		Vector2(float x, float y);
+		Vector2();
 
-	Vector2 operator + (Vector2 otherVector);
-	Vector2 operator - (Vector2 otherVector);
-	void operator += (Vector2 otherVector);
-	void operator -= (Vector2 otherVector);
-	void operator /= (float scalar);
+		Vector2 operator + (Vector2 otherVector);
+		Vector2 operator - (Vector2 otherVector);
+		void operator += (Vector2 otherVector);
+		void operator -= (Vector2 otherVector);
+		void operator /= (float scalar);
+		Vector2 operator / (float scalar);
+		void operator *= (float scalar);
+		Vector2 operator * (float scalar);
 
-	void Rotate(Vector2 axis, float radians);
-};
+		void Rotate(Vector2 axis, float radians);
+		float GetLength();
+		void Normalize();
+	};
+}
 
 #pragma warning(pop)

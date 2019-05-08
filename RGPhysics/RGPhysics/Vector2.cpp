@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "Vector2.h"
 
+using namespace RGPhysics;
+
 Vector2::Vector2(float x, float y)
 {
 	this->x = x;
@@ -62,4 +64,31 @@ void Vector2::operator/= (float scalar)
 {
 	this->x /= scalar;
 	this->y /= scalar;
+}
+
+void Vector2::operator*= (float scalar)
+{
+	this->x *= scalar;
+	this->y *= scalar;
+}
+
+Vector2 Vector2::operator* (float scalar)
+{
+	return Vector2(this->x * scalar, this->y * scalar);
+}
+
+Vector2 Vector2::operator/ (float scalar)
+{
+	return Vector2(this->x / scalar, this->y / scalar);
+}
+
+float Vector2::GetLength()
+{
+	return sqrtf(pow(this->x, 2) + pow(this->y, 2));
+}
+
+void Vector2::Normalize()
+{
+	float length = this->GetLength();
+	(*this) /= length;
 }

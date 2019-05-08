@@ -6,13 +6,30 @@
 #define RGPHYSICS_API __declspec(dllimport)
 #endif
 
-class B;
-class Polygon;
-
-class RGPHYSICS_API RigidBody
+namespace RGPhysics
 {
-public:
-	RigidBody();
-private:
-	Polygon &polygon;
-};
+	class Polygon;
+	struct Vector2;
+
+	const int FRAME_TARGET = 90;
+	const float MILLIS_TARGET = 1.0 / FRAME_TARGET;
+
+	class RGPHYSICS_API RigidBody
+	{
+	public:
+		RigidBody(Polygon *collisionPolygon);
+		void AddVelocity(Vector2 velocity);
+		void SetVelocity(Vector2 velocity);
+		void AddAngularVelocity(float angularVelocity);
+		void SetAngularVelocity(float angularVelocity);
+
+		Vector2 GetVelocity();
+		float GetAngularVelocity();
+
+		void Update(unsigned int elapsedMillis);
+	private:
+		Polygon *collisionPolygon;
+		Vector2 velocity;
+		float angularVelocity;
+	};
+}
