@@ -10,13 +10,19 @@
 
 namespace RGPhysics
 {
-	class RigidBody;
+	class SimElement;
 
 	class SimManager
 	{
 	public:
-		SimManager(std::vector<RigidBody> rigidBodies);
-	private:
+		SimManager(std::vector<SimElement> simElements);
+		SimManager();
 
+		void Update();
+		unsigned int GetElapsedMillis() const;
+	private:
+		std::chrono::time_point<std::chrono::steady_clock> lastTick;
+		std::vector<SimElement> simElements;
+		unsigned int elapsedMillis = 0;
 	};
 }

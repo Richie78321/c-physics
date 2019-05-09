@@ -1,14 +1,10 @@
 #include "stdafx.h"
+#include "SimManager.h"
 #include "Vector2.h"
 #include "Polygon.h"
 #include "RigidBody.h"
 
 using namespace RGPhysics;
-
-RigidBody::RigidBody(Polygon *collisionPolygon)
-{
-	this->collisionPolygon = collisionPolygon;
-}
 
 Vector2 RigidBody::GetVelocity()
 {
@@ -40,9 +36,9 @@ void RigidBody::SetAngularVelocity(float angularVelocity)
 	this->angularVelocity = angularVelocity;
 }
 
-void RigidBody::Update(unsigned int elapsedMillis)
+void RigidBody::Update(const SimManager &simManager)
 {
-	float framePortion = elapsedMillis / RGPhysics::FRAME_TARGET;
+	float framePortion = simManager.GetElapsedMillis() / RGPhysics::FRAME_TARGET;
 
 	//Add velocities
 	this->AddVelocity(this->GetVelocity() * framePortion);

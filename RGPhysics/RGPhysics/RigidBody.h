@@ -8,6 +8,7 @@
 
 namespace RGPhysics
 {
+	class SimManager;
 	class Polygon;
 	struct Vector2;
 
@@ -17,7 +18,7 @@ namespace RGPhysics
 	class RGPHYSICS_API RigidBody
 	{
 	public:
-		RigidBody(Polygon *collisionPolygon);
+		//RigidBody(Polygon *collisionPolygon);
 		void AddVelocity(Vector2 velocity);
 		void SetVelocity(Vector2 velocity);
 		void AddAngularVelocity(float angularVelocity);
@@ -26,7 +27,7 @@ namespace RGPhysics
 		Vector2 GetVelocity();
 		float GetAngularVelocity();
 
-		void Update(unsigned int elapsedMillis);
+		void Update(const SimManager &simManager);
 	private:
 		Polygon *collisionPolygon;
 		Vector2 velocity;

@@ -3,7 +3,113 @@
   Polygon.cpp
 c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\polygon.cpp(14): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   RigidBody.cpp
+c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\rigidbody.h(16): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\rigidbody.cpp(41): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+  SimManager.cpp
+c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\simmanager.cpp(27): warning C4244: '=': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(879): error C2259: 'RGPhysics::SimElement': cannot instantiate abstract class
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(879): note: due to following members:
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(879): note: 'void RGPhysics::SimElement::Update(const RGPhysics::SimManager &)': is abstract
+  c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\simelement.h(17): note: see declaration of 'RGPhysics::SimElement::Update'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory(163): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<RGPhysics::SimElement>,
+              _Ty=RGPhysics::SimElement,
+              _Objty=RGPhysics::SimElement
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory(164): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty&>(_Alloc &,_Objty *const ,_Ty &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<RGPhysics::SimElement>,
+              _Ty=RGPhysics::SimElement,
+              _Objty=RGPhysics::SimElement
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory(190): note: see reference to function template instantiation 'void std::_Uninitialized_backout_al<_FwdIt,_Alloc>::_Emplace_back<_Ty&>(_Ty &)' being compiled
+          with
+          [
+              _FwdIt=RGPhysics::SimElement *,
+              _Alloc=std::allocator<RGPhysics::SimElement>,
+              _Ty=RGPhysics::SimElement
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory(190): note: see reference to function template instantiation 'void std::_Uninitialized_backout_al<_FwdIt,_Alloc>::_Emplace_back<_Ty&>(_Ty &)' being compiled
+          with
+          [
+              _FwdIt=RGPhysics::SimElement *,
+              _Alloc=std::allocator<RGPhysics::SimElement>,
+              _Ty=RGPhysics::SimElement
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory(217): note: see reference to function template instantiation '_FwdIt std::_Uninitialized_copy_al_unchecked<_Ty*,_Ty*,_Alloc>(_InIt,const _InIt,const _FwdIt,_Alloc &,std::_General_ptr_iterator_tag,std::_Any_tag)' being compiled
+          with
+          [
+              _FwdIt=RGPhysics::SimElement *,
+              _Ty=RGPhysics::SimElement,
+              _Alloc=std::allocator<RGPhysics::SimElement>,
+              _InIt=RGPhysics::SimElement *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1823): note: see reference to function template instantiation '_FwdIt *std::_Uninitialized_copy<_Iter,RGPhysics::SimElement*,std::allocator<_Ty>>(const _InIt,const _InIt,_FwdIt,_Alloc &)' being compiled
+          with
+          [
+              _FwdIt=RGPhysics::SimElement *,
+              _Iter=RGPhysics::SimElement *,
+              _Ty=RGPhysics::SimElement,
+              _InIt=RGPhysics::SimElement *,
+              _Alloc=std::allocator<RGPhysics::SimElement>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1366): note: see reference to function template instantiation 'RGPhysics::SimElement *std::vector<RGPhysics::SimElement,std::allocator<_Ty>>::_Ucopy<_Iter>(_Iter,_Iter,RGPhysics::SimElement *)' being compiled
+          with
+          [
+              _Ty=RGPhysics::SimElement,
+              _Iter=RGPhysics::SimElement *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1366): note: see reference to function template instantiation 'RGPhysics::SimElement *std::vector<RGPhysics::SimElement,std::allocator<_Ty>>::_Ucopy<_Iter>(_Iter,_Iter,RGPhysics::SimElement *)' being compiled
+          with
+          [
+              _Ty=RGPhysics::SimElement,
+              _Iter=RGPhysics::SimElement *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1390): note: see reference to function template instantiation 'void std::vector<RGPhysics::SimElement,std::allocator<_Ty>>::_Assign_range<_Ty*>(_Iter,_Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Ty=RGPhysics::SimElement,
+              _Iter=RGPhysics::SimElement *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1390): note: see reference to function template instantiation 'void std::vector<RGPhysics::SimElement,std::allocator<_Ty>>::_Assign_range<_Ty*>(_Iter,_Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Ty=RGPhysics::SimElement,
+              _Iter=RGPhysics::SimElement *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1413): note: see reference to function template instantiation 'void std::vector<RGPhysics::SimElement,std::allocator<_Ty>>::assign<RGPhysics::SimElement*,void>(_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=RGPhysics::SimElement,
+              _Iter=RGPhysics::SimElement *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1413): note: see reference to function template instantiation 'void std::vector<RGPhysics::SimElement,std::allocator<_Ty>>::assign<RGPhysics::SimElement*,void>(_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=RGPhysics::SimElement,
+              _Iter=RGPhysics::SimElement *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1399): note: while compiling class template member function 'std::vector<RGPhysics::SimElement,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(const std::vector<_Ty,std::allocator<_Ty>> &)'
+          with
+          [
+              _Ty=RGPhysics::SimElement
+          ]
+  c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\simmanager.cpp(13): note: see reference to function template instantiation 'std::vector<RGPhysics::SimElement,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(const std::vector<_Ty,std::allocator<_Ty>> &)' being compiled
+          with
+          [
+              _Ty=RGPhysics::SimElement
+          ]
+  c:\users\rgoul\desktop\c-physics\rgphysics\rgphysics\simmanager.h(25): note: see reference to class template instantiation 'std::vector<RGPhysics::SimElement,std::allocator<_Ty>>' being compiled
+          with
+          [
+              _Ty=RGPhysics::SimElement
+          ]
   Vector2.cpp
   Generating Code...
-     Creating library C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.lib and object C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.exp
-  RGPhysics.vcxproj -> C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\RGPhysics.dll

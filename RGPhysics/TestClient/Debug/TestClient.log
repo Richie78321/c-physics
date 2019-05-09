@@ -1,1 +1,3 @@
-﻿  TestClient.vcxproj -> C:\Users\rgoul\Desktop\c-physics\RGPhysics\Debug\TestClient.exe
+﻿  pch.cpp
+  TestClient.cpp
+LINK : fatal error LNK1104: cannot open file 'RGPhysics.lib'
